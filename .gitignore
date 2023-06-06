@@ -1,0 +1,11 @@
+dist/
+out/
+build/
+logs/
+*.log
+#
+
+db.md
+.env
+node_modules/
+.git
