@@ -52,3 +52,19 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+// Retrieve the NODE_ENV value
+const nodeEnv = process.env.NODE_ENV;
+
+// Determine the environment based on NODE_ENV value
+const isProduction = nodeEnv === 'production';
+const isLocal = nodeEnv === 'development';
+
+// Example usage
+if (isProduction) {
+  console.log('Running in production environment');
+} else if (isLocal) {
+  console.log('Running in local environment');
+} else {
+  console.log('Unknown environment');
+}
