@@ -66,4 +66,4 @@ if (isProduction) {
   console.log('Running in local environment');
 } else {
   console.log('Unknown environment');
-}
+} 
